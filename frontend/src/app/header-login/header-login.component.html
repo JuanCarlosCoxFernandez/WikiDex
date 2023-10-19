@@ -1,0 +1,13 @@
+<div class="container-fluid header-div">
+    <br>
+    <div class="row smallButtons">
+        <div class="col dropdown smallButtons">
+            <img src="../../assets/img/logo.svg" alt="" class="iconlogo" (click)="toggleMenu()">
+        </div>
+        <div class="col iconlogin smallButtons">
+            <img src="../../assets/img/exit.svg" alt="" class="iconlogo" (click)="securityColor()">
+        </div>
+    </div>
+    <br>
+    <app-menu-l *ngIf="isMenuOpen"></app-menu-l>
+</div>

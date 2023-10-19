@@ -1,0 +1,13 @@
+<div class="menu" [ngClass]="{'open': isMenuOpen}">
+    <ul class="smallButtons">
+        <input type="text" class="btnColor" id="word" name="word"> <button (click)="search()" class="colorbtn img"><img src="../../assets/img/search.svg" alt="" class="img"></button>
+        <br>
+        <br>
+        <button class="btn btnColor" (click)="securityColor()">Inicio</button>
+        <br>
+        <br>
+        <button class="btn btnColor" (click)="toggleMode()">Darkmode</button>
+        <br>
+        <br>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+<div class="container-fluid header-div">
+    <br>
+    <div class="row">
+        <div class="col dropdown">
+            <img src="../../assets/img/logo.svg" alt="" class="iconlogo" (click)="toggleMenu()">
+        </div>
+        <div class="col iconlogin">
+            <img src="../../assets/img/login.svg" alt="" class="iconlogo" routerLink="/login">
+        </div>
+    </div>
+    <br>
+    <app-menu *ngIf="isMenuOpen"></app-menu>
+</div>

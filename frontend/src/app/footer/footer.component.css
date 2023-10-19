@@ -1,0 +1,9 @@
+.footer-div {
+    bottom: 0;
+    max-width: 100%;
+    /* padding: 10px 0; Espaciado opcional */
+    position: fixed;
+    /* text-align:left; Alineación opcional */
+    color: antiquewhite !important;
+    background-color: #FA1C1C !important;
+}
