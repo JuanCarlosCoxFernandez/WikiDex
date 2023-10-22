@@ -1,7 +1,7 @@
 .header-div { 
     height: 10%;
     width: 100%;
-    background-color: #FA1C1C;
+    background-color: #FA1C1C !important;
 }
 
 .iconlogin {
@@ -38,4 +38,8 @@
 
 .btnColor {
     background-color: #23DBD0;
+}
+
+.smallButtons {
+    background-color: #FA1C1C !important;
 }

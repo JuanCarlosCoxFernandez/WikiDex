@@ -17,17 +17,10 @@ export class HeaderLoginComponent {
     this.isMenuOpen = !this.isMenuOpen; // Invierte el estado del menú (abrir/cerrar)
   }
 
-  securityColor(){
-    if (this.isDarkMode != false){
-      this.toggleMode();
-      this.router.navigateByUrl('/home');
-    }else{
-      this.router.navigateByUrl('/home');
-    }
-  }
 
 
   toggleMode() {
+    console.log("aaaaaaaaaaaaa");
     this.isDarkMode = !this.isDarkMode;
     if (this.isDarkMode) {
       // Cambiar a modo oscuro
@@ -80,7 +73,6 @@ export class HeaderLoginComponent {
         h1.style.color = '#e9d2d2'; 
       });      
 
-      document.body.style.backgroundColor = '#555555'; 
 
       document.querySelectorAll('h2').forEach((h2) => {
         h2.style.color = '#e9d2d2'; 
@@ -90,6 +82,15 @@ export class HeaderLoginComponent {
       }); 
       
       
+    }
+  }
+
+  securityColor(){
+    if (this.isDarkMode == true){
+      this.router.navigateByUrl('/login');
+    }else{
+      this.toggleMode();
+      this.router.navigateByUrl('/login');
     }
   }
 }

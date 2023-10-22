@@ -13,7 +13,9 @@ import { Router } from '@angular/router';;
 export class LoginComponent {
   miFormulario: FormGroup;
 
-
+  ngOnInit(){
+    this.toggleMode();
+  }
   constructor(private router: Router, private fb: FormBuilder) {
     this.miFormulario = this.fb.group({
       user: ['' , Validators.required],
@@ -40,5 +42,34 @@ export class LoginComponent {
   } else {
     alert("Todos los campos son obligatorios. Por favor, llene todos los campos.");
   }
+}
+
+toggleMode() {
+  document.body.style.backgroundColor = '#e9d2d2'; 
+      
+      document.querySelectorAll('div').forEach((div) => {
+        div.style.color = '#e9d2d2';
+        div.style.backgroundColor = '#e9d2d2';
+      });
+
+      document.querySelectorAll('.containerCarrousel').forEach((div) => {
+        (div as HTMLElement).style.backgroundColor = '#555555';
+      })
+
+      document.querySelectorAll('.carousel-item').forEach((div) => {
+        (div as HTMLElement).style.backgroundColor = '#555555';
+      })
+
+      document.querySelectorAll('h1').forEach((h1) => {
+        h1.style.color = '#e9d2d2'; 
+      });      
+
+
+      document.querySelectorAll('h2').forEach((h2) => {
+        h2.style.color = '#e9d2d2'; 
+      });
+      document.querySelectorAll('p').forEach((p) => {
+        p.style.color = '#e9d2d2'; // color p
+      }); 
 }
 }
